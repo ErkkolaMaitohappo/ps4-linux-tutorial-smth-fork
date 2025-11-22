@@ -1,0 +1,136 @@
+# <DOCUMENT filename="PKGBUILD">
+# Based on the file created for Arch Linux by:
+# Tobias Powalowski <tpowa@archlinux.org>
+# Thomas Baechler <thomas@archlinux.org>
+
+# Contributor: Tk-Glitch <ti3nou at gmail dot com>
+# Contributor: Hyper-KVM <hyperkvmx86 at gmail dot com>
+
+plain '       .---.`               `.---.'
+plain '    `/syhhhyso-           -osyhhhys/`'
+plain '   .syNMdhNNhss/``.---.``/sshNNhdMNys.'
+plain '   +sdMh.`+MNsssssssssssssssNM+`.hMds+'
+plain '   :syNNdhNNhssssssssssssssshNNhdNNys:'
+plain '    /ssyhhhysssssssssssssssssyhhhyss/'
+plain '    .ossssssssssssssssssssssssssssso.'
+plain '   :sssssssssssssssssssssssssssssssss:'
+plain '  /sssssssssssssssssssssssssssssssssss/   Linux-tkg'
+plain ' :sssssssssssssssssoosssssssoosssssssssssss:        kernels'
+plain ' osssssssssssssoosssssssoossssssssssssso'
+plain ' osssssssssssyyyyhhhhhhhyyyyssssssssssso'
+plain ' /yyyyyyhhdmmmmNNNNNNNNNNNmmmmdhhyyyyyy/'
+plain '  smmmNNNNNNNNNNNNNNNNNNNNNmmmmdhhyyyyyy/'
+plain '   /dNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNd/'
+plain '    `:sdNNNNNNNNNNNNNNNNNNNNNNNNNds:`'
+plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
+plain '             `.-:///////:-.`'
+
+_where="$PWD"
+
+# === QUICK MODE: Only build bzImage, skip packaging ===
+if [ ! -e "$_where"/BIG_UGLY_FROGMINER ]; then
+  cp "$_where"/customization.cfg "$_where"/BIG_UGLY_FROGMINER
+  echo >> "$_where"/BIG_UGLY_FROGMINER
+
+  if [[ -z "$_EXT_CONFIG_PATH" ]]; then
+    eval `grep _EXT_CONFIG_PATH "$_where"/customization.cfg`
+  fi
+
+  if [ -f "$_EXT_CONFIG_PATH" ]; then
+    cat "$_EXT_CONFIG_PATH" >> "$_where"/BIG_UGLY_FROGMINER
+    echo >> "$_where"/BIG_UGLY_FROGMINER
+  fi
+
+  declare -p -x >> "$_where"/BIG_UGLY_FROGMINER
+  echo -e "_ispkgbuild=\"true\"\n_distro=\"Arch\"\n_where=\"$PWD\"" >> "$_where"/BIG_UGLY_FROGMINER
+
+  source "$_where"/BIG_UGLY_FROGMINER
+  source "$_where"/linux-tkg-config/prepare
+  _tkg_initscript
+fi
+
+source "$_where"/BIG_UGLY_FROGMINER
+
+# === PACKAGE INFO (still needed for makepkg env) ===
+pkgbase="linux-tkg-bzimage-only"
+pkgname=("$pkgbase")
+pkgver="${_basekernel}"."${_sub}"
+pkgrel=273
+pkgdesc='Build only bzImage from linux-tkg'
+arch=('x86_64')
+options=('!strip')
+
+for f in "$_where"/linux-tkg-config/"$_basekernel"/* "$_where"/linux-tkg-patches/"$_basekernel"/*.patch; do
+  source+=( "$f" )
+  sha256sums+=( "SKIP" )
+done
+
+export KBUILD_BUILD_HOST=archlinux
+export KBUILD_BUILD_USER=$pkgbase
+export KBUILD_BUILD_TIMESTAMP="$(date -Ru${SOURCE_DATE_EPOCH:+d @$SOURCE_DATE_EPOCH})"
+
+prepare() {
+  source "$_where"/BIG_UGLY_FROGMINER
+  source "$_where"/linux-tkg-config/prepare
+
+  ln -s "${_kernel_work_folder_abs}" "${srcdir}"
+  _tkg_srcprep
+}
+
+build() {
+  source "$_where"/BIG_UGLY_FROGMINER
+  cd "$_kernel_work_folder_abs"
+
+  # Compiler paths
+  if [ "$_compiler_name" = "-llvm" ] && [ -n "${CUSTOM_LLVM_PATH}" ]; then
+    PATH="${CUSTOM_LLVM_PATH}/bin:${CUSTOM_LLVM_PATH}/lib:${CUSTOM_LLVM_PATH}/include:${PATH}"
+  elif [ -n "${CUSTOM_GCC_PATH}" ]; then
+    PATH="${CUSTOM_GCC_PATH}/bin:${CUSTOM_GCC_PATH}/lib:${CUSTOM_GCC_PATH}/include:${PATH}"
+  fi
+
+  # Threading
+  if [ "$_force_all_threads" = "true" ]; then
+    _threads="-j$((`nproc`+1))"
+  else
+    _threads="${MAKEFLAGS}"
+  fi
+
+  # ccache
+  if [ "$_noccache" != "true" ] && pacman -Qq ccache &> /dev/null; then
+    export PATH="/usr/lib/ccache/bin/:$PATH"
+    export CCACHE_SLOPPINESS="file_macro,locale,time_macros"
+    export CCACHE_NOHASHDIR="true"
+    msg2 'ccache enabled'
+  fi
+
+  # Optimizations
+  CFLAGS=${CFLAGS/-O2/}
+  CFLAGS+=" ${_compileropt}"
+
+  # Build only bzImage
+  msg2 "Building bzImage only..."
+  make ${_threads} ${llvm_opt} LOCALVERSION= bzImage
+}
+
+# === PACKAGE FUNCTION: Just copy bzImage out ===
+package() {
+  cd "$_kernel_work_folder_abs"
+
+  local kernver="$(<version)"
+  local output_dir="$startdir"  # Output to same folder as PKGBUILD
+  local bzimage_path="arch/x86/boot/bzImage"
+
+  if [ ! -f "$bzimage_path" ]; then
+    error "bzImage not found! Build failed."
+    return 1
+  fi
+
+  msg2 "Copying bzImage to $output_dir/bzImage-linux-tkg-${pkgver}-${pkgrel}"
+  install -Dm644 "$bzimage_path" "$output_dir/bzImage-linux-tkg-${pkgver}-${pkgrel}"
+
+  msg2 "bzImage built and saved:"
+  msg2 "   $(realpath $output_dir/bzImage-linux-tkg-${pkgver}-${pkgrel})"
+}
+
+# === NO HEADERS PACKAGE ===
+# </DOCUMENT>
