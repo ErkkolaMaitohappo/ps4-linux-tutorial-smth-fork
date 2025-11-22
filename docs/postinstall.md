@@ -241,7 +241,7 @@ To play games, these are the recommended softwares:
 - Steam
 - Heroic Games Launcher (for Epic, GOG and Amazon)
 - Lutris (for other PC games not in those launchers)
-- Prism Launcher instead of those other shitty Minecraft launchers
+- Fjord Launcher instead of those other shitty Minecraft launchers
 	- Minecraft has graphical issues in versions newer than 1.21.5
 - And a bunch of emulators!
 

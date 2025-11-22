@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "PS4 Linux Tutorial, Based on Dionkill's shitty tutorial but better."
   text: "A simple guide on how to install Linux on PS4 systems"
-  tagline: "by DionKill"
+  tagline: "by FlyingPhantom"
   image:
     src: hero.png
   actions:

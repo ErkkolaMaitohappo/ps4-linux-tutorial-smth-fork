@@ -56,5 +56,5 @@ Again, choose only one method and stick with it, and remember that Baikal can't 
 :::
 
 ::: tip External Installation
-[Click here to go to the External Installation methods section.](external-installation)
+[Click here to go to the External Installation methods section.](external-installation-alternative)
 :::
