@@ -75,7 +75,6 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Common issues', link: '/issues' },
-          { text: 'Baikal issues', link: '/baikal' },
         ]
       },
       {
