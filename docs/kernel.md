@@ -71,5 +71,14 @@ This page contains content on how to compile your own kernel.
 
 - The config will be used automatically if you followed up the Step 1 of the guide.
 
+- Cd in the the linux-tkg with this command:
+
+  ```
+  cd linux-tkg
+  
+  ```
+
+- Now run the *makepkg -o* command and follow the instructions of the linux-tkg next.
+
 
 # To be continued....
