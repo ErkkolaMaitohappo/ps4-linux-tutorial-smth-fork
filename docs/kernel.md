@@ -36,7 +36,6 @@ This page contains content on how to compile your own kernel.
 - You will also need to install couple packages needed to compile you can copy the provided command:
 
   ```
-
   yay -S --needed base-devel git ccache schedtool clang lld llvm \
   bison xmlto docbook-xsl inetutils bc libelf pahole patchutils flex \
   python-sphinx python-sphinx_rtd_theme graphviz imagemagick cpio \
