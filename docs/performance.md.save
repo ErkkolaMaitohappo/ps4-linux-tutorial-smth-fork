@@ -1,0 +1,15 @@
+# How to improve your performance on the Playstation 4
+
+## This page will only cover the Playstation Fat and Slim because the Pro has basically no issues in terms of running Window managers or Desktop environments.
+>- **NOTE: All of the changes to the Playstation 4 Fat or Slim can be applied to the Pro if you want to squeeze in more performance**
+
+
+# 1 - Kernel level optimizations
+
+- Most of the optimizations for the kernel can not be applied after installation so to use this visit the [How to compile your own kernel page](https://flyingphantom.github.io/ps4-linux-tutorial/kernel.html).
+
+| Kernel optimizations              | What this options does?
+| ----------------------------------|-----------------------------
+| processor_opt                     | Applies microarchitecture level optimizations to the kernel
+|
+|

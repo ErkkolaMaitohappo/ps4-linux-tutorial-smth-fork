@@ -90,6 +90,13 @@ export default defineConfig({
         items: [
           { text: 'Compile your own kernel', link: '/kernel' }
         ]
+      },
+      {
+        text: '🚀 Performance',
+        collapsed: true,
+        items: [
+          { text: 'Performance tweaks & optimization', link: '/performance' }
+        ]
       }
     ],
 
