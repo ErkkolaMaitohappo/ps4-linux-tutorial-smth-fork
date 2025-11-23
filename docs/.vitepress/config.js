@@ -95,7 +95,8 @@ export default defineConfig({
         text: '🚀 Performance',
         collapsed: true,
         items: [
-          { text: 'Performance tweaks & optimization', link: '/performance' }
+          { text: 'Performance tweaks & optimization', link: '/performance' },
+	  { text: 'Hyprland', link: '/hyprland'}
         ]
       }
     ],
