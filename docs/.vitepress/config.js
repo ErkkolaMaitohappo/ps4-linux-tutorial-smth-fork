@@ -96,7 +96,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Performance tweaks & optimization', link: '/performance' },
-          { text: 'Hyprland', link: '/hyprland'}
+          { text: 'Hyprland', link: '/hyprland'},
+   	  { text: 'Sway', link: '/sway'}
         ]
       },
       {
