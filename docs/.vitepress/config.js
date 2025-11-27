@@ -65,9 +65,9 @@ export default defineConfig({
         text: '💜 Post Installation',
         collapsed: false,
         items: [
-          { text: 'Post install setup', link: '/postinstall' },
-          { text: 'Distro DIY', link: '/distrodiy' },
-          { text: 'Game testing', link: '/game-testing' },
+          { text: 'Post install setup', link: '/postinstallation/postinstall' },
+          { text: 'Distro DIY', link: '/postinstallation/distro' },
+          { text: 'Game testing', link: '/postinstallation/game-testing' },
         ]
       },
       {
@@ -88,32 +88,32 @@ export default defineConfig({
         text: '🔧 Compile your own kernel',
         collapsed: true,
         items: [
-          { text: 'Compile your own kernel', link: '/kernel' }
+          { text: 'Compile your own kernel', link: '/miscellaneous/kernel' }
         ]
       },
       {
         text: '🚀 Performance',
         collapsed: true,
         items: [
-          { text: 'General tweaks & optimization', link: '/performance' },
+          { text: 'General tweaks & optimization', link: '/miscellaneous/performance' },
           {
             text: '🌊 Wayland Compositors',
             collapsed: true,
             items: [
-              { text: 'Hyprland', link: '/hyprland' },
-              { text: 'Sway',      link: '/sway' },
-              { text: 'Niri',      link: '/niri' }
+              { text: 'Hyprland', link: '/wayland/hyprland' },
+              { text: 'Sway',      link: '/wayland/sway' },
+              { text: 'Niri',      link: '/wayland/niri' }
             ]
           },
           {
             text: '✖ Xorg Window Managers',
             collapsed: true,
             items: [
-              { text: 'i3',        link: '/i3' },
-              { text: 'Openbox',   link: '/openbox' },
-              { text: 'bspwm',     link: '/bspwm' },
-              { text: 'dwm',        link: '/dwm' },
-              { text: 'Awesome',   link: '/awesome' }
+              { text: 'i3',        link: '/xorg/i3' },
+              { text: 'Openbox',   link: '/xorg/openbox' },
+              { text: 'bspwm',     link: '/xorg/bspwm' },
+              { text: 'dwm',        link: '/xorg/dwm' },
+              { text: 'Awesome',   link: '/xorg/awesome' }
             ]
           }
         ]
@@ -122,7 +122,7 @@ export default defineConfig({
         text: '🖥️ Mesa & Graphics',
         collapsed: true,
         items: [
-          { text: 'Mesa drivers & tweaks', link: '/mesa' }
+          { text: 'Mesa drivers & tweaks', link: '/miscellaneous/mesa' }
         ]
       }
     ],

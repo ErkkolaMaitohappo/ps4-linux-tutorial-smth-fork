@@ -43,7 +43,7 @@ Finally, install the driver packages:
 sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
 ```
 
-Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
+Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](/postinstallation/distro) and make them from the AUR or from scratch!
 :::
 
 ::: details Debian/Ubuntu based distros (untested)

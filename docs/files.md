@@ -49,10 +49,10 @@ If you have issues, remember to check the [Issues page](issues).
 ### More kernels
 If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
 
-If you want more kernels or help, ask out the [Discord servers](revisions.md#important-places).
+If you want more kernels or help, ask out the [Discord servers](/revisions#important-places).
 
 ## Initramfs
-This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/FlyingPhantom/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
 There's another in-dev initramfs, if you want to check it out it's [here](https://github.com/ps4gentoo/initramfs).
 
@@ -80,7 +80,7 @@ These distros are newer, supported by updates and recommended. CachyOS was used 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.
 >
->Want to make your own? [Check this out!](distrodiy)
+>Want to make your own? [Check this out!](/postinstallation/distro)
 
 ## To the installation we go!
 
