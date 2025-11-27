@@ -106,7 +106,7 @@ export default defineConfig({
             ]
           },
           {
-            text: '<Icon name="x11" /> Xorg Window Managers',
+            text: '✖ Xorg Window Managers',
             collapsed: true,
             items: [
               { text: 'i3',        link: '/i3' },
