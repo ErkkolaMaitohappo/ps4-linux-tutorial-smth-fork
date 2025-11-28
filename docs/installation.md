@@ -1,7 +1,7 @@
 ---
 next:
-  text: 'Choose an Installation Method!'
-  link: 'installation#choosing-a-method-of-installation'
+  text: 'Internal Installation!'
+  link: 'internal-installation.md'
 ---
 
 
