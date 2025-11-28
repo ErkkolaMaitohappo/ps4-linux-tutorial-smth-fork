@@ -55,46 +55,57 @@
 
 ## 2 - Debian based distros
 
+- **NOTE: You will need to run `sudo apt install flatpak` and `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo` before installing most of these.**
+
 ::: details Retroarch
 
-- Just install by running `sudo add-apt-repository ppa:libretro/stable && sudo apt-get update && sudo apt-get install retroarch`
+- Just install by running `sudo apt install retroarch -y`
+
 :::
 
 
 ::: details PCSX2
 
 
-- Just install by running `sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily && sudo apt-get update && sudo apt-get install pcsx2-stable`
+- Just install by running `flatpak install flathub net.pcsx2.PCSX2`
+
+- You can run it by using `flatpak run net.pcsx2.PCSX2`
 
 :::
 
 
 ::: details Dolphin
 
-- Just install by running `sudo add-apt-repository ppa:ubuntuhandbook1/dolphin-emu && sudo apt-get update && sudo apt-get install dolphin-emu`
+- Just install by running `flatpak install flathub org.DolphinEmu.dolphin-emu`
+
+- You can run it by using `flatpak run org.DolphinEmu.dolphin-emu`
 
 :::
 
 ::: details Rpcs3
 
-- Just install by running `yay -S rpcs3-bin --noconfirm`
+- Just install by running `flatpak install flathub net.rpcs3.RPCS3`
 
-- Also install *rpcs3-udev* with `yay -S rpcs3-udev --noconfirm`
-
-- *rpcs3-udev* is need for the emulator to be able to utilize ps4 and ps3 controllers.
+- You can run it by using `flatpak run net.rpcs3.RPCS3`
 
 :::
 
 
 ::: details PPSSPP
 
-- Just install by running `yay -S ppsspp --noconfirm`
+- Just install by running `flatpak install flathub org.ppsspp.PPSSPP`
+
+- You can run it by using `flatpak run org.ppsspp.PPSSPP`
 
 :::
 
 
 ::: details Duckstation
 
-- Just install by running `yay -S duckstation-gpl --noconfirm`
+- Download the latest DuckStation-x64.AppImage from https://github.com/stenzek/duckstation/releases
+
+- Run `chmod +x DuckStation-x64.AppImage` in the directory in which your DuckStation-x64.AppImage file is located in
+
+- Run `./DuckStation-x64.AppImage` to run DuckStation
 
 :::
