@@ -1,6 +1,6 @@
 # How to improve your performance on the Playstation 4
 
-## This page will only cover the Playstation Fat and Slim because the Pro has basically no issues in terms of running Window managers or Desktop environments. Also including games.
+## This page will only cover the Playstation Fat and Slim because the Pro has basically no issues in terms of running Window managers, Desktop environments and games.
 >- **NOTE: All of the changes to the Playstation 4 Fat or Slim can be applied to the Pro if you want to squeeze in more performance**
 
 
@@ -23,7 +23,7 @@
 - For proton we can use either [Proton-Sarek](https://github.com/pythonlover02/Proton-Sarek) or [Proton-CachyOS](https://github.com/CachyOS/proton-cachyos).
 
 > [!TIP]
-> Instead of just installing these compile them manually using custom -march and -mtune flags which should be *-march=btver2* and *-mtune=btver2*
+> Instead of just installing these compile them manually using custom -march and -mtune flags, those being *-march=btver2* and *-mtune=btver2*
 
 - For Proton-Sarek you can use `PROTON_SAREK_PROFILE=agg` profile to gain performance in some games.
 
@@ -43,7 +43,7 @@
 		
 - [LXDE](https://www.lxde.org/) ***Small Note: for some fucking reason the site is flagged as unsecure***
 
-- [LXQT](https://lxqt-project.org/)(Just LXDE but with QT support)
+- [LXQT](https://lxqt-project.org/) (Just LXDE but with QT support)
 
 - [XFCE](https://xfce.org/)
 
@@ -62,9 +62,9 @@
 
 - [DWL](https://gitlab.com/marcobruna/dwl)
 
-- [Hyprland](https://hypr.land/)(Runs well on Pro models but not tested on non Pro models, use a lightweight config)
+- [Hyprland](https://hypr.land/) (Runs well on Pro models but not tested on non Pro models, use a lightweight config)
 
-- [Swayfx](https://github.com/WillPower3309/swayfx)(Also not tested on non pro models, use a lightweight config)
+- [Swayfx](https://github.com/WillPower3309/swayfx) (Also not tested on non pro models, use a lightweight config)
 
-- [Niri](https://yalter.github.io/niri/)(Also not tested on non pro model, use a lightweight config)
+- [Niri](https://yalter.github.io/niri/) (Also not tested on non pro model, use a lightweight config)
 :::

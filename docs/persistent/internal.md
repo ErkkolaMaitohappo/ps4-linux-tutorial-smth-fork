@@ -32,17 +32,14 @@
 - Then you will need to download neccesery files.
 
 > [!NOTE]
-> It is recommended that you use windows because it is easier but if you can do this on linux make a pr becuase i am unaware of neccesery software being available for linux.
+> It is recommended to use Windows, as the process is easier. However, if you are able to do this on Linux, please open a pull request, as I am not aware of the necessary software being available for Linux.
 
-- For information on how to flash a luckfox pico you will need to go the [luckfox wifi](https://wiki.luckfox.com/intro). And select the page acordingly to your luckfox model, also make sure to always click on "System Image Flashing" section on their wiki.
+- For information on how to flash a luckfox pico, visit the [luckfox wifi](https://wiki.luckfox.com/intro) and select the page corresponding to your luckfox model. Also make sure to always click on "System Image Flashing" section on their wiki.
 
 <img src="/luckfox-pico-plus-mini.png" width="75%">
-
-- Image above is for luckfox pico plus mini
-
+<small>The image above is for luckfox pico plus mini</small>
 <img src="/otherluckfox.png" width="75%">
-
-- Image above is for luckfox pico pro max and ultra W
+<small>The image above is for luckfox pico pro max and ultra W</small>
 
 - Next make sure you download the RK DriverAssitant and SocToolKit flashing tool.
 

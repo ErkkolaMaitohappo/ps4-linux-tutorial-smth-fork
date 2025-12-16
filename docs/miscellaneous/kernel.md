@@ -18,7 +18,7 @@ This page contains content on how to compile your own kernel.
 
 ## Which methods are available?
 
-- You can do manuall with commands by following the [archwiki](https://wiki.archlinux.org/title/Kernel/Arch_build_system). Or you can do the far more user friendly approach by using [linux-tkg](https://github.com/Frogging-Family/linux-tkg). In this page only linux-tkg will be covered as its far more user friend and just easier to use.
+- You can manually compile using commands by following the [archwiki](https://wiki.archlinux.org/title/Kernel/Arch_build_system). Or you can do the far more user friendly approach by using [linux-tkg](https://github.com/Frogging-Family/linux-tkg). In this page only linux-tkg will be covered as its far more user friend and just easier to use.
 
 
 ## Step 1 - Setup

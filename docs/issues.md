@@ -81,8 +81,6 @@ I mean it was kind of expected. How else are you gonna go back to the main menu?
 
 # Other issues
 ::: details The scene is a complete mess
-Previously I used this as a rant to pour all of my stress into figuring how the fuck this shit is supposed to work, but the more I got into it and the more I understood.
-
 In a nutshell, the scene is a mess and a lot of stuff may be shared privately or on Discord servers because:
 - It's in testing phase and therefore not public yet
 - It's not open sourced because there's a lot of people who steal the developer's work
@@ -90,9 +88,9 @@ In a nutshell, the scene is a mess and a lot of stuff may be shared privately or
 
 Especially the second reason is why the community is like this, unfortunately.
 
-It will take time, I'm grateful for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places :D
+It will take time, I'm grateful for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places
 :::
 
 ::: details How can I improve the situation?
-Join the Discord servers, share this tutorial, star it on GitHub (pretty please), also don't forget to like, comment and subscribe!
+Join the Discord servers, share this tutorial, and please star it on GitHub
 :::

@@ -8,7 +8,7 @@ This page contains content that has been added for preservation's sake, even tho
 In all honesty: most of these can be found on the PS4Linux.com website, as it hasn't been updated in a long time. Don't use these on modern distros, as they don't boot anymore.
 ### Kernels
 #### Other kernels
-These are additional kernels that are kind of up to date but also not really or that do not offer prebuilts, which aren't useful for 99% of people.
+These are additional kernels that are somewhat up to date but either lack prebuilt binaries or aren’t very useful for most people.
 
 | Kernel version | Source and download                           | Compatible Southbridges    | Extra info                          |
 | -------------- | --------------------------------------------- | -------------------------- | ----------------------------------- |
