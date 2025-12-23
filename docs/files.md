@@ -74,7 +74,7 @@ There's many distros, most however, are very outdated, especially the ones on th
 | [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Divided into multiple files                                                         |
 | [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | Unknown | [Noob404](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8)        | For retrogaming                                                                     |
 | [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3)                                                    | None    | TigerClips1                                                               | A distro made from scratch for the PS4! Still in development, but worth mentioning. |
-| [Clean Archlinux with kde ](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/tag/v1%2Bkde)| Arch | [ErkkolaMaitohappo](https://github.com/ErkkolaMaitohappo)
+| [Clean Archlinux with kde ](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/tag/v1.1%2Bkde)| Arch | [ErkkolaMaitohappo](https://github.com/ErkkolaMaitohappo)
 
 >[!TIP]
 >Want to add more distros? Make an issue on github.
