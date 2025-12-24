@@ -26,6 +26,7 @@ There's multiple levels of stability:
 | ---------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Minecraft                          | High      | Works (with Mesa 25.2+), but shaders are completely broken.<br>Tested only 1.21.9.                                                                 |
 | Half-Life 2                        | High      | Works but some things look black with shaders set to max                                                                                           |
+| N64Recomp/rt64                     | High      | Audio issues on pulseaudio, export SDL_AUDIODRIVER=alsa to fix.                                                                                     |
 | BeamNG.drive                       | Medium    | The game works with no issues, apart from horrible performance. It can be tweaked heavily to get a playeable framerate.                            |
 | Need for Speed: Most Wanted (2005) | ???       | Couldn't even get it to run. This game needs a full reinstallation every time, ffs.                                                                |
 | Expedition 33                      | Broken    | Crashes the entire UI system and you're forced to open a tty and reboot                                                                            |
