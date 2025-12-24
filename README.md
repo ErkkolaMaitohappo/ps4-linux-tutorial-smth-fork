@@ -8,5 +8,3 @@ You can visit it [here](https://flyingphantom.github.io/ps4-linux-tutorial/).
 To build the repo, clone the repo, then inside said repo, run the commands you find at the [VitePress quickstart](https://vitepress.dev/guide/getting-started).
 
 ---
-
-This repo uses the MIT license, because I need to give a license.
