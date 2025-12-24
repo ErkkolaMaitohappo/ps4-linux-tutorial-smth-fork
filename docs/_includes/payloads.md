@@ -20,7 +20,7 @@ It's also possible to load these payloads locally.
 
 In order to do that, go [download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads):
 - Install "Payload Loader" on your PS4 to load the payloads locally
-- Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
+- Extract from the file and copy the payloads for your firmware and console to /data/payloads/ so Payload Guest can find them, if directory doesn't exist create it.
 	- Enable "see file extensions" on Windows Explorer or what you're using
 	- If it doesn't have any particularly append, it's for both Aeolia and Belize
 - Remember to check sometimes to see if there's any updates

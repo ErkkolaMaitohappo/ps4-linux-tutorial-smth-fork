@@ -31,6 +31,8 @@
 
 - Then you will need to download neccesery files.
 
+- Internal linux install already present.
+
 > [!NOTE]
 > It is recommended to use Windows, as the process is easier. However, if you are able to do this on Linux, please open a pull request, as I am not aware of the necessary software being available for Linux.
 
