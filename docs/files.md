@@ -55,9 +55,8 @@ If you want more kernels or help, ask out the [Discord servers](/revisions#impor
 ## Initramfs
 This is the rescue shell that boots your Linux installation and allows you to install linux in the first place if not installed already. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/FlyingPhantom/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
-There's another in-dev initramfs, if you want to check it out it's [here](https://github.com/ps4gentoo/initramfs).
-
-Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, I found it and thought was really interesting.
+## Payloads
+None of this is possible without neccesery payloads to install linux get your payloads [here](https://github.com/FlyingPhantom/ps4-linux-tutorial/blob/main/PS4%20Linux/ps4-linux-payloads.zip). The reason why we need "*non-official*" payloads is because the normal payloads have been splitting the distro and bzImage,initramfs directory without any proper reason which overcomplicates things when trying to help people find issues.
 
 ## Distros
 There's many distros, most however, are very outdated, especially the ones on the PS4Linux's website list. These distros are newer, supported by updates and recommended. CachyOS was used for this guide, but you can follow the same method of installation for all the other ones reported here.
