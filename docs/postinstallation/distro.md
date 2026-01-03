@@ -7,7 +7,7 @@ If you don't trust people on the internet (and rightfully so), you may want to p
 > [!WARNING]
 > This is meant for advanced users ONLY.
 > 
-> Some things may not work properly. If you encounter issues, chat on the [Discords](https://discord.com/invite/QtcPmzHVVm).
+> Some things may not work properly. If you encounter issues, chat on the [Discords](/information#important-places).
 
 ## Why is this necessary
 The PS4 Linux community is fragmented: some contributors focus on experimental work, others aim for real development, and few collaborate across projects. As a result, many patches haven’t been merged into the mainline projects, even after nearly ten years.
